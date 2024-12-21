@@ -266,7 +266,7 @@
 	    <input type="text" id="internetLink" name="internetLink" placeholder="https://example.com" required>
 	    <div id="errorInternetLink" class="error-message"></div>
 
-	    <input type="hidden" id="sender" name="sender" value="AvtoAl"> <!-- Hidden sender field -->
+	    <input type="hidden" id="sender" name="sender" value="Koreacars.az"> <!-- Hidden sender field -->
 
 
             <div class="calculation-id-container">
@@ -507,9 +507,9 @@
 
                 const adjustedBasePriceUSD = adjustedBasePrice / KRWUSD;
 
-                const feeUnder20k = 0.03;
-                const feeOver20k = 0.04;
-                const adjustmentUnder20k = 250;
+                const feeUnder20k = 0.035;
+                const feeOver20k = 0.045;
+                const adjustmentUnder20k = 200;
                 const adjustmentOver20k = 50;
 
                 const feePercent = adjustedBasePriceUSD < 20000 ? feeUnder20k : feeOver20k;
